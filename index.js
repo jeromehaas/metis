@@ -1,10 +1,11 @@
 #!/usr/bin/env node
-
+const functions = require('./lib/functions')
+const settings = require('./settings.json')
 const clear = require('clear');
 
-const run = () => {
+const run = async () => {
   clear();
-  console.log('Hello World');
+  await functions.createNewNote();
 }
 
 run();
