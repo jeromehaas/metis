@@ -1,3 +1,4 @@
 {
-  "notePath": "/Users/jerome.haas/Documents/metis"
+  "metisDirectory": "/Users/jeromehaas/.metis",
+	"categories": ["projects", "ideas", "code-snippets", "manuals", "knowledge"]
 }
