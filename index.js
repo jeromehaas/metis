@@ -1,14 +1,10 @@
 #!/usr/bin/env node
 
-const getUsername = require('./lib/get-username');
-const functions = require('./lib/functions');
-const settings = require('./settings.json');
-const clear = require('clear');
+const appRootPath = require('app-root-path').path;
+const createNote = require(`${appRootPath}/lib/create-note`);
 
 const run = async () => {
-  clear();
-	const username = getUsername();	
-	console.log(username);
+	createNote();
 }
 
 run();
